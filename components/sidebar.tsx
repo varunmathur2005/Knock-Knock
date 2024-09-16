@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, Leaf, Settings, Mail } from "lucide-react";
+import { LayoutDashboard, Leaf, Settings, Mail, Table } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
@@ -23,10 +23,16 @@ const routes = [
     color: "text-violet-500",
   },
   {
-    label: "Resume & Cover Letter Generation",
+    label: "Cover Letter Generation",
     icon: Leaf,
     href: "/generate",
     color: "text-emerald-700",
+  },
+  {
+    label: "Applications Tracker",
+    icon: Table,
+    href: "/track",
+    color: "text-rose-700",
   },
   {
     label: "Settings",
@@ -45,6 +51,7 @@ const Sidebar = () => {
           <div className="relative w-8 h-8 mr-4">
             <Image src="/logo.png" alt="Logo" fill />
           </div>
+
           <h1 className={cn("text-2xl font-bold", montserrat.className)}>
             Knock-Knock
           </h1>

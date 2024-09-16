@@ -1,10 +1,12 @@
 "use client";
+
 import { Heading } from "@/components/heading";
 import { Mail } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/components/ui/use-toast"; // Import shadcn UI toast hook
+import { useToast } from "@/components/ui/use-toast"; 
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const Email = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -69,29 +71,37 @@ const Email = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center p-8">
       <Heading
         title="Cold Emailing"
-        description="Upload a CSV file to start sending cold emails."
+        description="Start sending cold emails..."
         icon={Mail}
         iconColor="text-violet-500"
         bgColor="bg-violet-500/10"
       />
 
-      <div className="mt-4">
-        <Input
-          type="file"
-          accept=".csv"
-          onChange={handleFileChange}
-          placeholder="Click here to choose your file"
-        />
-      </div>
-
-      <div className="mt-4">
-        <Button onClick={handleSubmit} disabled={!selectedFile || uploading}>
-          {uploading ? "Sending emails..." : "Upload and Send Emails"}
-        </Button>
-      </div>
+      <Card className="mt-8 w-full max-w-lg">
+        <CardHeader>
+          <h2 className="text-lg font-medium">Upload Your File</h2>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-col gap-4">
+            <Input
+              type="file"
+              accept=".csv"
+              onChange={handleFileChange}
+              placeholder="Click here to choose your file"
+            />
+            <Button
+              onClick={handleSubmit}
+              disabled={!selectedFile || uploading}
+              className="w-full"
+            >
+              {uploading ? "Sending emails..." : "Upload and Send Emails"}
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

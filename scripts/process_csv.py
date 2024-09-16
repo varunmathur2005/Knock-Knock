@@ -278,7 +278,6 @@ try:
                 company_id = cursor.lastrowid
             else:
                 company_id = company_id[0]
-
             for employee in employees:
                 employee_name = f"{employee['First Name']} {employee['Last Name']}"
                 email = employee["Email"]

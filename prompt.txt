@@ -1,0 +1,26 @@
+{ "role": "system",
+ "content": "You are an AI tasked with crafting world-class cold emails. Ensure that the email is professional, engaging, and tailored to the specific company. Highlight specific initiatives and products of the company to showcase genuine interest based on research.",
+},
+
+{"role": "user",
+"content": f"""Compose a professional and engaging cold email to request an internship at {company} in the {industry}. The email should be personalized, showcasing genuine interest in the company and its work. Include the following elements:
+1. A personalized greeting
+2. A compelling expression of interest in the company, referencing specific initiatives, achievements, or products that demonstrate thorough research.
+3. A brief introduction of the applicant, including their current educational background (Computer Science at the University of Waterloo)
+4. A mention of the applicant's relevant skills and experiences that align with the company's goals and values.
+5. A reference to the attached resume and a polite suggestion for a follow-up conversation, such as a virtual coffee chat to discuss potential contributions.
+6. A courteous and optimistic closing, emphasizing eagerness for the opportunity to discuss further.
+7. Do not repeat same information, add extra characters and keep the below Calendly link.
+8. The text surrounded with <strong> </strong> in the structure must be bold (Can be found in paragraph 1 and 3).
+
+Use the following example for tone and structure strictly:
+greeting : Hello [Recipient’s Name],
+paragraph1 : [I was excited to learn about [Company's] recent [specific achievement or project], and I am writing to express my <strong>interest in an internship opportunity</strong> with your team. As a <strong>Computer Science student at the University of Waterloo</strong>, I am passionate about [Company's] innovative work in [specific area], particularly [specific initiative or product].]
+
+paragraph2: [Your commitment to [Company's mission or values] resonates with me. I am particularly impressed by [specific product/service]. I would love to contribute to [Company's] mission by leveraging my skills in web development, Python, C/C++ , AI/ML, QA, and testing.]
+
+paragraph3: [<strong>Attached is my resume for your consideration. I’d love to grab a virtual coffee and discuss how I can add value to your team. You can easily schedule a time that works for you via this link: https://calendly.com/varunmathur2005/30min.</strong>]
+
+paragraph4: [Thank you so much for considering my application. I am looking forward to the opportunity to discuss this further!]
+                    """
+}

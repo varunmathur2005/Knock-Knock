@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Leaf, Mail } from "lucide-react";
+import { ArrowRight, Leaf, Mail, Table } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const tools = [
@@ -14,11 +14,18 @@ const tools = [
     href: "/email",
   },
   {
-    label: "Resume & Cover Letter Generation", // corrected from "lable" to "label"
+    label: "Cover Letter Generation", // corrected from "lable" to "label"
     icon: Leaf,
     color: "text-emerald-500",
     bgColor: "text-emerald-500/10",
     href: "/generate",
+  },
+  {
+    label: "Applications Tracker", // corrected from "lable" to "label"
+    icon: Table,
+    color: "text-rose-700",
+    bgColor: "text-rose-700/10",
+    href: "/track",
   },
 ];
 
