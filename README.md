@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Knock-Knock
 
-## Getting Started
+Knock-Knock is an AI-powered full-stack web application designed to streamline job applications for students pursuing internships and full-time roles. It leverages AI to automate lead generation, cold emailing, and cover letter creation, reducing the time spent on manual job application tasks.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Landing Page and Dashboard:** An intuitive and user-friendly interface powered by Clerk authentication for seamless user access.
+  
+  ![Landing Page]
+  <img width="1436" alt="image" src="https://github.com/user-attachments/assets/25733e4d-df53-4dbb-9f21-b116e67afe7c">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ![Dashboard]
+  <img width="1436" alt="image" src="https://github.com/user-attachments/assets/f69667d5-c2ab-4835-8d2b-bde444510f52">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Apollo Web Scraper:** A custom-built Google plugin that scrapes leads from Apollo.io and allows users to download the scraped list.
 
-## Learn More
+  [![Apollo Web Scraper](https://img.youtube.com/vi/pqTQKKBMGH4/0.jpg)](https://youtu.be/pqTQKKBMGH4)
 
-To learn more about Next.js, take a look at the following resources:
+- **Cold Email Automation:** Automatically send customized, tailored emails to each contact in the lead list, personalizing outreach and saving time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  [![Cold Email Automation](https://img.youtube.com/vi/lN0p4wB3y30/0.jpg)](https://youtu.be/lN0p4wB3y30)
+  
+  ![Cold Email Automation Example](https://github.com/user-attachments/assets/ac352e74-6b03-4136-8fdd-aa4e1b9b33ae)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Cover Letter Generator:** Given the user's information and job description, Knock-Knock generates custom cover letters to match job requirements and enhance application success.
 
-## Deploy on Vercel
+  [![Cover Letter Generator](https://img.youtube.com/vi/afmzuFTlE9M/0.jpg)](https://youtu.be/afmzuFTlE9M)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Frontend:** Next.js, React.js, ShadCN UI
+- **Backend:** Node.js, Express.js
+- **Authentication:** Clerk
+- **Database:** MySQL, AWS S3
+- **Web Scraping Plugin:** Google Chrome Plugin
+- **Emailing:** SMTP
+- **Cover Letter & Cold Email Generation:** OpenAI API
