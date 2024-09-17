@@ -23,8 +23,6 @@
   [![Watch Demo](https://img.youtube.com/vi/lN0p4wB3y30/0.jpg)](https://youtu.be/lN0p4wB3y30)  
   _Click the thumbnail to watch the video demonstration._
 
-  ![Cold Email Automation Example](https://github.com/user-attachments/assets/ac352e74-6b03-4136-8fdd-aa4e1b9b33ae)
-
 - ### **Cover Letter Generator**  
   Knock-Knock generates custom cover letters based on user-provided information and job descriptions, aligning the letter with job requirements to maximize application success.
 
